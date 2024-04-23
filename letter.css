@@ -1,4 +1,4 @@
-*{
+  *{
     
     margin: 0;
     padding: 0;
@@ -14,23 +14,23 @@ body{
     margin: auto;
     overflow: hidden;
     width: 210mm;
-    height: 350mm;
+    height: 310mm;
     position: relative;
     font-family: "Poppins", sans-serif;
-    background-color: white;
+    background-color: #aedee230;
 }
 .letter-wrapper .letter-background .left-top
 {
   height: 10px;
-  padding-left: 0px;
-  padding-top: 0px;
+  width: 50%;
   border-top: 50px solid red;
+  position: absolute;
+  left: 0mm;
+  top: 0mm;
 }
 .letter-wrapper .letter-background .right-top
 {
   height: 10px;
-  padding-right: 0px;
-  padding-top: 0px;
   border-top: 50px solid black;
   width: 50%;
   position: absolute;
@@ -51,13 +51,12 @@ body{
 .line2{
   width:0.1mm;
   padding-right: 20mm;
-  top: 297.5mm;
+  top: 265.5mm;
   border-left: 2px solid black;
   height: 36.2mm;
   position: absolute;
   right: 0mm;
   left: 27mm;
-  /* top: 50mm; */
 }
    body .letter-wrapper .letter-content header .letter-org-logo {
     font-weight: bold;
@@ -74,24 +73,21 @@ body{
     height: 40mm;
   }
   body .letter-wrapper .letter-content header .letter-org-name {
-    /* font-weight: bold; */
+    position: absolute;
     width: auto;
     height: auto;
     font-size: 20pt;
     color: rgb(235, 42, 42);
     font-weight: bolder;
     margin-left: 64mm;
-    top:7mm;
+    top:20mm;
   }
   .letter-content header .letter-org-details {
-    /* font-weight: bold;*/
-    top: 28mm;
+   top: 28mm;
     margin-left: 64mm;
     width: auto;
     height: auto;
     font-size: 18pt;
-    /* font-weight: bold; */
-    /* color: black; */
     color: rgb(59, 57, 57);
     position: absolute;
   } 
@@ -101,13 +97,11 @@ body{
     left: 31mm;
     top: 53mm;
     color: rgb(59, 57, 57);
-    /* @include absolute-div(15mm,50mm,50%,auto); */
-     font-size:13pt;
+    font-size:13pt;
   }
   .letter-date{
     font-weight:bold;
     position:absolute;
-    /* @include absolute-div(165mm,50mm,30%,auto); */
     font-size:13pt;
     top:53mm;
     right: 30mm;
@@ -117,11 +111,11 @@ body{
   body .letter-wrapper .letter-content .letter-body .letter-body-to {
     position: absolute;
     left: 30mm;
-    top: 80mm;
+    top: 72mm;
     width: 70mm;
     height: 35mm;
     font-weight: bold;
-    font-size: 13pt;
+    font-size: 12pt;
     margin: 0mm;
     line-height: 21px;
     color: rgb(59, 57, 57);
@@ -129,7 +123,7 @@ body{
   body .letter-wrapper .letter-content .letter-body .letter-body-subject {
     position: absolute;
     left: 20mm;
-    top: 95mm;
+    top: 75mm;
     width: calc(100% - 45mm);
     height: 20mm;
     margin-left: 10mm;
@@ -142,7 +136,7 @@ body{
   body .letter-wrapper .letter-content .letter-body .letter-body-salutation {
     position: absolute;
     left: 20mm;
-    top: 143mm;
+    top: 130mm;
     width: auto;
     height: auto;
     margin-left: 10mm;
@@ -153,18 +147,18 @@ body{
   body .letter-wrapper .letter-content .letter-body .letter-body-message {
     position: absolute;
     left: 0mm;
-    top: 151mm;
+    top: 140mm;
     width: auto;
     height: 115mm;
     margin-left: 30mm;
     margin-right: 30mm;
     font-weight: bold;
-    font-size: 13pt;
+    font-size: 12pt;
     color: rgb(59, 57, 57);
     line-height: 20px;
   }
    body .letter-wrapper .letter-content .letter-body .letter-body-message p {
-    /* font-size: small; */
+   
     overflow: auto;
     text-align: justify;
     margin-top: 5mm;
@@ -174,7 +168,7 @@ body{
   body .letter-wrapper .letter-content .letter-body .letter-body-sign {
     position: absolute;
     left: 0mm;
-    top: 256mm;
+    top: 236mm;
     width: auto;
     height: auto;
     margin-left: 30mm;
@@ -192,7 +186,7 @@ body{
   body .letter-wrapper .letter-content .letter-footer {
     position: absolute;
     left: 0mm;
-    bottom: 18mm;
+    bottom: 10mm;
     width: 100%;
     height: 35mm;
     
@@ -211,17 +205,16 @@ body{
   }
   
   body .letter-wrapper .letter-content .letter-footer .letter-org-website {
-    bottom: 5mm;
-    /* display: flex; */
+    position: absolute;
     align-items: center;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     width: auto;
     height: auto;
     margin-left: 30mm;
     margin-right: 15mm;
     font-size: 18pt;
     font-weight: bold;
-    text-shadow: 0.2mm 0.2mm white;
+    /* text-shadow: 0.2mm 0.2mm white; */
   }
   body .letter-wrapper .letter-content .letter-footer .letter-org-phone {
     position: absolute;
@@ -229,8 +222,6 @@ body{
     top: 13mm;
     width: 40%;
     height: auto;
-    /* margin-left: 15mm;
-    margin-right: 15mm; */
     font-size: 13pt;
   }
   body .letter-wrapper .letter-content .letter-footer .letter-org-email {
@@ -251,4 +242,4 @@ body{
     font-size: 13pt;
    
   }
-   
+     
